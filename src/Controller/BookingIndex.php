@@ -31,7 +31,7 @@ class BookingIndex extends AbstractController
             ->add('endDate', DateType::class, ['required' => true, 'widget' =>'single_text'])
             ->add('arrivalTime', TimeType::class, ['required' => true, 'widget' =>'single_text'])
             ->add('nrOfPeople', IntegerType::class, ['required' => true])
-            ->add('payingMethod', ChoiceType::class, ['choices' => ['cash'=>'cash','transfer'=>'transfer', 'creditCard'=>'creditCard' ],'required' => true])
+            ->add('payingMethod', ChoiceType::class, ['choices' => ['cash'=>'cash','transfer'=>'transfer'],'required' => true])
             ->add('additionalInformation', TextareaType::class, ['required' => false])
             ->add('submit', SubmitType::class, ['label' => 'Create booking'])
             ->getForm();
