@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\BookingsRepository;
+use App\Repository\BookingRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=BookingsRepository::class)
+ * @ORM\Entity(repositoryClass=BookingRepository::class)
  */
-class Bookings
+class Booking
 {
     /**
      * @ORM\Id

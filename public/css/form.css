@@ -1,0 +1,43 @@
+.booking-form {
+    border: 1px solid #79CCCC;
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 50%;
+}
+
+.booking-form input{
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+}
+#form div{
+    display: inline-block;
+}
+
+.booking-form label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+
+.booking-form .form-row select {
+    margin-right: .25em;
+}
+
+.booking-form .form-row select {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.booking-form .form-row select:focus {
+    outline: none;
+}

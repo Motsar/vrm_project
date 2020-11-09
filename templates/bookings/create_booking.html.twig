@@ -1,6 +1,20 @@
 {% extends 'bookings/index.html.twig' %}
 
 {% block content %}
-    <h1>Fill the form to create booking</h1>
-    {{ form(form) }}
+    <h2>Fill the form to create booking</h2>
+    {{ form_start(form, {attr: {class: 'booking-form'}}) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block form_row %}
+    <div class="form-row">
+        {{ form_label(form) }}
+        {{ form_widget(form) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/form.css">
 {% endblock %}
